@@ -68,8 +68,7 @@ export class App extends React.Component {
 
 
   setProgress(message, counter=null) {
-    console.log('setProgress()')
-    console.log(message, counter)
+    
     // this.setState({
     //   alert : {
     //     tone : isNeutral ? 'neutral' : 'negative',
@@ -149,7 +148,7 @@ export class App extends React.Component {
     const tracklist = this.sortByColumn(this.state.tracks)
     return (
       <div id="app" className={this.state.isLoading?'loading':''}>
-        <h1><b>PURE STATS.</b> Get stats for any* Soundcloud user’s track collection. Learn more.</h1>
+        <h1><b>PURE STATS.</b> Get stats for <a target="_blank" href="https://github.com/jtavarez/soundcloud-stats#pure-stats">any*</a> Soundcloud user’s track collection.</h1>
         
         <Header
           submit={this.submitUserSearch}
@@ -168,7 +167,6 @@ export class App extends React.Component {
 
 
 function checkViewPortLazyLoads(){
-  console.log('checkViewPortLazyLoads')
   var doc = document.documentElement;
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
   var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
@@ -178,9 +176,11 @@ function checkViewPortLazyLoads(){
   
   let minRange = top
   let maxRange = top + h
-  for (let img of imgArray) {
-    if (img.y > minRange && img.y < maxRange && !img.getAttribute('src')) {
-      window.setTimeout(()=>{loadImage(img)}, randomIntFromInterval(0,700))
+
+  for (let i=0,l=imgArray.length; i<l; i++) {
+  
+    if (imgArray[i].y > minRange && imgArray[i].y < maxRange && !imgArray[i].getAttribute('src')) {
+      window.setTimeout(()=>{loadImage(imgArray[i])}, randomIntFromInterval(0,700))
     }
   }
 }

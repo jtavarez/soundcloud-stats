@@ -1,8 +1,8 @@
-
+import React from 'react'
 
 const statusCodes = {
   INTRO : {
-    message: "Search for a SC user to get started!",
+    message: "Search for a Soundcloud user to get started. Choice examples: ErraticNYC, Deep-Space-Helsinki, Reclaim-Your-City",
     tone: "neutral"
   },
   USERNAME_NOT_FOUND : {

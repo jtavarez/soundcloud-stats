@@ -38,7 +38,6 @@ export default {
             offset:offset
           }).then(function(tracks){
           console.log(`%c Tracks ${offset} to ${offset + tracks.collection.length-1} obtained`,'background: lightgray;')
-          console.log(tracks)
           totalTracks.push(...tracks.collection)
 
           if (tracks.next_href) {
@@ -57,7 +56,6 @@ export default {
               
 
           } else {
-            console.warn(totalTracks)
             resolve(totalTracks)
           }
         })
@@ -73,7 +71,6 @@ export default {
    * the promise is resolved so component can update UI on client side.
    */
   startUserSearch(name, setProgress) {
-    console.log(name)
     return new Promise((resolve, reject)=>{
 
       //   // logic for codes
@@ -134,7 +131,6 @@ export default {
             track.favoritings_count===undefined ||
             track.download_count===undefined
             ) {
-            console.warn('undefined!')
             track.noStats = true;
           }
 
@@ -193,8 +189,6 @@ export default {
         })
       // We are finished with our loading of data (regardless of success)
       }).done(()=>{
-        console.log('DONE')
-        // dispatch(COMPLETE_SEARCH)
 
     })
   })

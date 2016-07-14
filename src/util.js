@@ -11,7 +11,6 @@ function getTotal(array, key) {
   for (let i=0,l=array.length; i<l; i++) {
     total += array[i][key]
   }
-  console.log(total)
   return total
 }
 function getMax(array, key) {
@@ -19,7 +18,6 @@ function getMax(array, key) {
   for (let i=0,l=array.length; i<l; i++) {
     max = (max>array[i][key]) ? max : array[i][key]
   }
-  console.log(max)
   return max
 }
 
