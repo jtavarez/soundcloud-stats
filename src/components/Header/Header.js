@@ -47,7 +47,7 @@ export default class Search extends React.Component {
         </header>
         <header className="Header__search">
           {loader}
-          <input className="Header__search__input" type="text" onChange={e=>this.onChange(e.target.value)} onKeyDown={e=>this.onKeyDown(e)} value={this.state.searchValue} placeholder="Enter username" />
+          <input className="Header__search__input" type="text" onChange={e=>this.onChange(e.target.value)} onKeyDown={e=>this.onKeyDown(e)} value={this.state.searchValue} placeholder="Enter username here & press enter" />
         </header>
         </hgroup>
         

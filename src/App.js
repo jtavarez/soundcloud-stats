@@ -14,8 +14,8 @@ import tracks from 'util/_mockdata_tracks.json'
 import {
   getProfileDetails,
   prepareTracks,
-  DEFAULT_USERNAME_TEXT
 } from 'util.js'
+import { statusCodes } from 'util/statusCodes'
 
 // Array of DOM nodes for <img> lazy loading
 // Kept out of React lifecycle
@@ -28,9 +28,11 @@ export class App extends React.Component {
       isLoading : false,
       sortCol : 'created_at',
       sortDir : -1,
-      status : null,
-      tracks : prepareTracks(tracks),
-      profile: getProfileDetails(profile,tracks),
+      status : statusCodes.INTRO,
+      // tracks : prepareTracks(tracks),
+      // profile: getProfileDetails(profile,tracks),
+      tracks : [],
+      profile: {},
     }
   }
   componentWillMount(){

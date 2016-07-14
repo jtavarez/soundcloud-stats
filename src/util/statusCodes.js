@@ -1,6 +1,10 @@
 
 
 const statusCodes = {
+  INTRO : {
+    message: "Search for a SC user to get started!",
+    tone: "neutral"
+  },
   USERNAME_NOT_FOUND : {
     message: "Username could not be found.",
     tone: "negative"
@@ -10,7 +14,7 @@ const statusCodes = {
     tone: "negative"
   },
   TRACK_COUNT_MISMATCH : {
-    message: "There may be more tracks on account than what's being returned. This is a limitation of the Soundcloud API",
+    message: "There's probably more tracks on account than what's being shown. This is a limitation of the Soundcloud API",
     tone: "neutral"
   },
   NO_TRACKS : {

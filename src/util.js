@@ -1,7 +1,7 @@
 // Entry point
 import moment from 'moment'
 
-export const DEFAULT_USERNAME_TEXT = 'Search for a username to get started'
+export const DEFAULT_USERNAME_TEXT = ''
 export const keys = {
   ENTER : 13
 }
