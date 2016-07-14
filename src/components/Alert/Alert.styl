@@ -1,0 +1,20 @@
+@import '~theme'
+
+.Alert
+  border-top 1px solid $line
+  p
+    font-size 14px
+    border-radius 2px
+    background #E6E6E6
+    margin 10px 0
+    padding 10px 14px
+
+  &--negative p
+    background $alert_negative_bg
+    border-left 2px solid $alert_negative
+    color $alert_negative
+
+  &--neutral p
+    background $alert_neutral_bg
+    border-left 2px solid $alert_neutral
+    color $alert_neutral

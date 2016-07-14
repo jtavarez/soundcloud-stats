@@ -1,0 +1,54 @@
+@import '~theme'
+.Header
+  border-top 4px solid $line
+  
+  padding 0px 0
+  
+  hgroup
+    display flex
+
+
+  &__user
+    padding 10px 0
+    flex 1
+    height 70px
+    position relative
+
+    &__avatar
+      display block
+      width 50px
+      height 50px
+      // background gray
+      float left
+      margin 0 10px 0 0
+      
+
+      img
+        width 100%
+        height 100%
+        position relative
+        border-radius 50px
+
+    &__fullName
+      margin 0 0 0 15px
+      font-weight normal
+
+  &__search
+    flex 1
+    height 70px
+    position relative
+    border-left 1px solid $line
+
+    &__input
+      width 100%
+      border none
+      padding 0px 20px
+      // background pink
+      height 70px
+      border-bottom 4px solid white
+      &:focus
+        outline none
+        border-bottom 4px solid $highlight
+
+
+

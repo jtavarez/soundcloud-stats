@@ -1,0 +1,80 @@
+@import '~theme'
+
+.TrackList
+  font-size 12px
+  overflow hidden
+  margin 0 0 100px
+  width 100%
+  border-collapse collapse
+
+  &__date
+    text-align right
+  &__number
+    text-align right
+
+  th
+    border-top 2px solid $line
+    border-bottom 1px solid $line
+    text-transform uppercase
+    padding 5px
+    text-align left
+
+    &.number
+      text-align right
+
+  td
+    border-bottom 1px solid $line
+    padding 0px 5px
+    position relative
+
+
+
+    a
+      display block
+      
+      padding 6px 0
+    span.label
+      position relative
+      z-index 2
+    span.bar {
+      display block
+      background #E7E7E7
+      width 0
+      height 100%
+      position absolute
+      z-index 1
+      left 0
+      top 0
+    }
+
+
+
+.TrackList__thumbnail
+  position absolute
+  top 0
+  left 0
+  transform translateY(0)
+  transition 0.8s all cubic-bezier(0.165, 0.84, 0.44, 1)
+
+  &--loaded .TrackList__thumbnail__placeholder
+    opacity 0
+
+.TrackList tr.track:hover td
+  background #f3f3f3
+.TrackList tr.track:hover .TrackList__thumbnail
+  transform translateY(-73px)
+
+.TrackList__thumbnail__artwork
+.TrackList__thumbnail__placeholder
+  position absolute
+  top 0
+  left 0
+
+.TrackList__thumbnail__placeholder
+  background black
+  opacity 1
+  display block
+  width 100px
+  height 100px
+  z-index 5
+  transition 0.3s all linear

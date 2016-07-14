@@ -1,0 +1,35 @@
+{
+  "id": 2779924,
+  "kind": "user",
+  "permalink": "erraticnyc",
+  "username": "Erratic",
+  "last_modified": "2016\/06\/09 23:44:58 +0000",
+  "uri": "https:\/\/api.soundcloud.com\/users\/2779924",
+  "permalink_url": "http:\/\/soundcloud.com\/erraticnyc",
+  "avatar_url": "https:\/\/i1.sndcdn.com\/avatars-000138345862-c8jobv-large.jpg",
+  "country": "United States",
+  "first_name": "",
+  "last_name": "",
+  "full_name": "",
+  "description": "Established in 2011, run exclusively by DOS LOKOS, www.erraticnyc.com\/booking. We curate authentic Techno via our established podcast series and acclaimed events in New York City.",
+  "city": "New York City",
+  "discogs_name": null,
+  "myspace_name": null,
+  "website": "http:\/\/www.erraticnyc.com",
+  "website_title": "Erratic",
+  "online": false,
+  "track_count": 126,
+  "playlist_count": 2,
+  "plan": "Pro Plus",
+  "public_favorites_count": 7,
+  "subscriptions": [
+    {
+      "product": {
+        "id": "creator-pro-unlimited",
+        "name": "Pro Unlimited"
+      }
+    }
+  ],
+  "followers_count": 7402,
+  "followings_count": 0
+}
